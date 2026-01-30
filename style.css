@@ -16,6 +16,9 @@ body{
     justify-content: center;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 header{
     background:linear-gradient(180deg,rgba(53, 42, 60, 0.95) 0%, rgba(20, 20, 28, 0.95) 100%);
     border-right: 1px solid rgba(255, 255, 255,0.05);
@@ -223,3 +226,72 @@ a{
     border-left:5px solid #a18cd1;
     background: rgba(161, 140, 209, 0.1);
 }
+
+#skills{
+    padding:18px 0;
+    border-bottom:1px solid rgba(255, 255, 255, 0.1);
+}
+
+#skills h2{
+    font-size:2rem;
+    color:#fbc2eb;
+    margin-bottom:24px;
+}
+
+#skills ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit ,minmax(250px,1fr));
+   gap:40px;
+}
+
+#skills ul li{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+    transition:all 0.3s ease;
+    color:#fafafa;
+    font-weight:600;
+    letter-spacing:0.5px;
+}
+
+#skills ul li:hover{
+    background:rgba(161, 140, 209, 0.1);
+    transform:translateY(-8px);
+    border-color:#a18cd1;
+    box-shadow:0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.pro{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+
+.pro #pro1{
+    border:1px solid gba(255,255,255,0.1);
+    border-radius:12px;
+    background:rgba(255,255,255,0.05);
+    padding:17px;
+}
+
+.pro #pro2{
+    border:1px solid gba(255,255,255,0.1);
+    border-radius:12px;
+    background:rgba(255,255,255,0.05);
+    padding:17px;
+}
+#projects h2{
+    font-size:2rem;
+    color:#fbc2eb;
+    margin-bottom:8px;
+    padding:18px 0px;
+    display:flex;
+
+}
+
