@@ -68,12 +68,12 @@
         <section id="projects">
             <h2>Projects</h2>
         <div class="pro">
-            <article id="pro1">
+            <article>
                 <h3>Portfolio Website</h3>
                 <p>A simple portfolio website built with HTML,CSS and JavaScript.</p>
             </article>
 
-            <article id="pro2">
+            <article >
                 <h3>Todo App</h3>
                 <p>A small project to practice JavaScript DOM manipulation.</p>
             </article>
@@ -83,12 +83,15 @@
         <section id="contact">
             <h2>Contact Me</h2>
 
-            <form action="#" method="post">
-                <label Name: <input type="text" name="Name" placeholder="Your Name"></label>
+            <form action="#" method="post" class="form">
+                <label for="name">Name:</label>
+                <input type="text" name="Name" placeholder="Your Name" id="name">
 
-                <label Email: <input type="email" name="Email" placeholder="email@gmail.com"></label>
+                <label for="email">Email:</label>
+                 <input type="email" name="Email" placeholder="email@gmail.com" id="email">
 
-                <label Message: <input type="text" name="Message" placeholder="Your Message"></label>
+                <label for="mess"> Message: </label>
+                <textarea id="mess" placeholder="Your Message"></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
