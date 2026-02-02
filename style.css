@@ -37,10 +37,10 @@ header{
 
 header nav  .logo img{
     width:180px;
-    height:100px;
+    height:180px;
     border:3px solid #6c5ce7;;
     padding:2px;
-    border-radius:50%;
+    border-radius:10%;
     padding:4px;
     object-fit: cover;
 }
@@ -134,11 +134,8 @@ main{
     margin-bottom:20px;
 }
 
-.highlight {
-    background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
+   
 
 .sub{
     font-size:24px;
@@ -380,3 +377,55 @@ a{
     box-shadow:0px 8px 25px rgba(251, 194, 235, 0.5);
     filter:brightness(1.1);
 }
+
+@keyframes gravity{
+    0%{
+        transform:translateY(-120px);
+        opacity:0;
+    }
+
+    25%{
+        transform:translateY(10px);
+        opacity:1;
+    }
+
+    75%{
+        transform:translateY(-4px);
+        
+    }
+
+    100%{
+        transform:translateY(2px);
+        opacity:1;
+    }
+}
+
+@keyframes float{
+    0%{
+        
+    }
+    50%{
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.name{
+    display:inline-flex;
+    animation:float 2.5s ease-in-out infinite;
+}
+.name span{
+    display:inline-block;
+    opacity:0;
+    animation: gravity 1s ease-out forwards;
+    animation-delay: calc(var(--i)*0.25s);
+
+     background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
