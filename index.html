@@ -6,19 +6,21 @@
     <title>Portfolio</title>
     <link rel="icon" href="images.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
+            
             <a href="#home" class="logo">
                 <img src="images (4).jpg" alt="Harsh Portfolio Logo">
             </a>
 
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="active-link">About</a></li>
+                <li><a href="#skills" class="active-link">Skills</a></li>
+                <li><a href="#projects" class="active-link">Projects</a></li>
+                <li><a href="#contact" class="active-link">Contact</a></li>
             </ul>
 
 
@@ -94,13 +96,16 @@
             <form action="#" method="post" class="form">
                 <label for="name">Name:</label>
                 <input type="text" name="Name" placeholder="Your Name" id="name">
+                <small class="error"></small>
 
                 <label for="email">Email:</label>
                  <input type="email" name="Email" placeholder="email@gmail.com" id="email">
+                  <small class="error"></small>
 
                 <label for="mess"> Message: </label>
                 <textarea id="mess" placeholder="Your Message"></textarea>
-
+                <small class="error"></small>
+                
                 <button type="submit">Send Message</button>
             </form>
 
